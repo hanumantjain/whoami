@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root {
+    --color-primary: #91867c;
+    --color-secondary: #00cc99
+}
+
+* {
+    font-family: 'Tektur', sans-serif;
+}
