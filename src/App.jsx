@@ -4,7 +4,7 @@ import Home from "./pages/Home"
 
 function App() {
   return (
-    <div className='text-4xl bg-black'>
+    <div className='text-4xl'>
       <Routes>
         <Route path='/' element={<Introduction />} />
         <Route path="/home" element={<Home />} />

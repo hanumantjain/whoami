@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 :root {
-    --color-secondary: #00cc99
-}
-
-* {
     font-family: 'Tektur', sans-serif;
+    --color-secondary: #00cc99;
+    background-color: black;
 }
