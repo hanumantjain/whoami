@@ -15,13 +15,13 @@ const Projects = () => {
     const projectToShow = showAll ? projectData.slice().reverse() : projectData.slice().reverse().slice(0, 4)
 
   return (
-    <div id='hanumant jain projects' className="w-full max-w-5xl mx-auto p-10 py-20">
-      <h2 className="text-5xl text-center mb-20">My Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-        {projectToShow.slice().reverse().map((project) => (
+    <div id='hanumant jain projects' className="w-full max-w-6xl mx-auto p-10 py-20">
+      <h2 className="text-5xl text-center mb-20 font-bold">Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        {projectToShow.map((project) => (
           <Card
             key={project.id}
-            className="rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-[1.02] overflow-hidden"
+            className="rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-[1.02] overflow-hidden border border-neutral-800"
           >
             <CardContent className="flex flex-col items-center gap-3">
               <img
