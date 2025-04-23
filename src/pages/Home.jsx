@@ -3,6 +3,8 @@ import {TypeAnimation} from 'react-type-animation'
 import { RandomColorContext } from '../components/RandomColor'
 import Navbar from '../components/Navbar'
 import About from '@/components/About'
+import Experience from '@/components/Experience'
+import Projects from '@/components/Projects'
 
 const Home = () => {
   const primaryColor = useContext(RandomColorContext)
@@ -13,7 +15,7 @@ const Home = () => {
       <div className='min-h-screen flex items-center'>
         <div className='text-3xl md:text-6xl pl-10 md:pl-30'>
           <h1 className='pb-3'>Hey, I'm Hanumant </h1>
-            <span>I'm {">"} </span>
+            <span>{">"} </span>
             <span style={{ color: primaryColor }}>
             <TypeAnimation 
               sequence={[
@@ -28,6 +30,8 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Experience />
+      <Projects />
     </div>
   )
 }
