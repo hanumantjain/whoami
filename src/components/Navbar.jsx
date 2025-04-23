@@ -1,31 +1,31 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { RandomColorContext } from "../components/RandomColor";
-import { Switch } from "@/components/ui/switch";
+import React, { useContext, useEffect, useState } from "react"
+import { RandomColorContext } from "../components/RandomColor"
+import { Switch } from "@/components/ui/switch"
+import { Link } from "react-scroll"
 
 const navLinkBase =
   "px-3 py-2 text-sm font-medium transition-colors hover:[color:var(--primary-color)]";
 
 const Navbar = () => {
-  const primaryColor = useContext(RandomColorContext);
+  const primaryColor = useContext(RandomColorContext)
   const [isDarkMode, setIsDarkMode] = useState(() => {
     if (typeof window !== "undefined") {
       return localStorage.theme === "dark" || 
         (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches);
     }
-    return false;
-  });
+    return false
+  })
 
   useEffect(() => {
-    const root = document.documentElement;
+    const root = document.documentElement
     if (isDarkMode) {
-      root.classList.add("dark");
-      localStorage.theme = "dark";
+      root.classList.add("dark")
+      localStorage.theme = "dark"
     } else {
-      root.classList.remove("dark");
-      localStorage.theme = "light";
+      root.classList.remove("dark")
+      localStorage.theme = "light"
     }
-  }, [isDarkMode]);
+  }, [isDarkMode])
 
   return (
     <div
@@ -35,16 +35,20 @@ const Navbar = () => {
       <nav className="backdrop-blur-md rounded-full shadow-xl border border-neutral-800">
         <div className="px-8 py-4">
           <div className="flex items-center space-x-8">
-            <Link to="/about" className={navLinkBase}>
+            <Link to="hanumant jain about" spy={true} smooth={true} offset={-70} duration={500}
+                  className={navLinkBase}>
               About Me
             </Link>
-            <Link to="/experience" className={navLinkBase}>
+            <Link to="hanumant jain experience" spy={true} smooth={true} offset={-70} duration={500}
+                  className={navLinkBase}>
               Experience
             </Link>
-            <Link to="/projects" className={navLinkBase}>
+            <Link to="hanumant jain projects" spy={true} smooth={true} offset={-70} duration={500}
+                  className={navLinkBase}>
               Projects
             </Link>
-            <Link to="/contact" className={navLinkBase}>
+            <Link to="hanumant jain contact" spy={true} smooth={true} offset={-70} duration={500}
+                  className={navLinkBase}>
               Contact
             </Link>
             <div className="flex items-center space-x-2">

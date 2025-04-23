@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Card,
   CardContent,
 } from "@/components/ui/card";
-import projectData from '../utils/ProjectData';
+import projectData from '../utils/ProjectData'
 
 const Projects = () => {
+    const[showAll, setShowAll] = useState(false)
+
+    const handleShowAll = () => {
+        setShowAll(true)
+    }
+
+    const projectToShow = showAll ? projectData.slice().reverse() : projectData.slice().reverse().slice(0, 4)
+
   return (
-    <div className="w-full max-w-5xl mx-auto p-10">
-      <h2 className="text-6xl text-center mb-20">My Projects</h2>
+    <div id='hanumant jain projects' className="w-full max-w-5xl mx-auto p-10 py-20">
+      <h2 className="text-5xl text-center mb-20">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-        {projectData.slice().reverse().map((project) => (
+        {projectToShow.slice().reverse().map((project) => (
           <Card
             key={project.id}
             className="rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-[1.02] overflow-hidden"
@@ -44,6 +52,20 @@ const Projects = () => {
           </Card>
         ))}
       </div>
+      {!showAll && projectData.length > 4 && (
+        <div className="flex justify-center mt-16">
+        <button
+          onClick={handleShowAll}
+          className="relative text-2xl group overflow-hidden"
+        >
+          Show All Projects
+          <span
+            className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"
+          ></span>
+        </button>
+      </div>
+      
+      )}
     </div>
   );
 };
