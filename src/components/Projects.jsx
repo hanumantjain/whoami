@@ -7,7 +7,7 @@ import projectData from '../utils/ProjectData';
 
 const Projects = () => {
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 py-8">
+    <div className="w-full max-w-5xl mx-auto p-10">
       <h2 className="text-6xl text-center mb-20">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         {projectData.slice().reverse().map((project) => (
@@ -19,7 +19,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.alt}
-                className="w-full h-56 object-cover mb-5"
+                className="w-full h-56 object-fit mb-5"
               />
               <h1 className="text-2xl font-semibold pb-2">{project.name}</h1>
               <p className="text-sm text-muted-foreground mb-4 px-6">
