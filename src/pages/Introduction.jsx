@@ -17,7 +17,7 @@ const Introduction = () => {
     }, [navigate])
 
   return (
-    <div style={{ color: primaryColor }} className='w-full h-screen flex justify-center items-center'>
+    <div style={{ color: primaryColor }} className='w-full h-screen bg-black flex justify-center items-center'>
         {text.map((letter, index) => (
             <motion.span
             key = {index}
