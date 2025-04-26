@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react'
+import { RandomColorContext } from '../components/RandomColor'
 import {
   Card,
   CardContent,
@@ -13,7 +14,7 @@ const Projects = () => {
     }
 
     const projectToShow = showAll ? projectData.slice().reverse() : projectData.slice().reverse().slice(0, 4)
-
+    const primaryColor = useContext(RandomColorContext)
   return (
     <div id='hanumant jain projects' className="w-full max-w-6xl mx-auto p-10 py-20">
       <h2 className="text-5xl text-center mb-20 font-bold">Projects</h2>
@@ -29,13 +30,13 @@ const Projects = () => {
                 alt={project.alt}
                 className="w-full h-56 object-fit mb-5"
               />
-              <h1 className="text-2xl font-semibold pb-2">{project.name}</h1>
+              <h1 className="text-2xl font-semibold pb-2" style={{ color: primaryColor }}>{project.name}</h1>
               <p className="text-sm text-muted-foreground mb-4 px-6">
                 {project.description}
               </p>
               {project.tools && (
                 <p className="text-sm font-medium text-gray-600 mb-4 px-6">
-                  <span className="font-semibold">Tools:</span> {project.tools}
+                  <span className="font-semibold" style={{ color: primaryColor }}>Tools:</span> {project.tools}
                 </p>
               )}
               {project.website && (
@@ -43,7 +44,8 @@ const Projects = () => {
                   href={project.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline text-lg font-medium pb-6"
+                  className=" hover:underline text-lg font-medium pb-6"
+                  style={{ color: primaryColor }}
                 >
                   View Project
                 </a>

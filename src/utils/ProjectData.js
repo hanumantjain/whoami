@@ -69,6 +69,7 @@ const projectData = [
         image: img6,
         alt: "hanumant jain medical",
         description : "This is an architect's portfolio" ,
+        tools : "React, TailwindCSS",
         website: "https://wallcreaftarchitects.netlify.app"
     }, 
 ]

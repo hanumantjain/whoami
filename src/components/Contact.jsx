@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react'
+import { RandomColorContext } from '../components/RandomColor'
 
 const Contact = () => {
+  const primaryColor = useContext(RandomColorContext)
+  
   return (
     <div
       id="hanumant jain contact"
@@ -11,7 +14,7 @@ const Contact = () => {
         <div className="border rounded-2xl p-10 shadow-lg border-neutral-800 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
           <h3 className="text-3xl font-semibold mb-4">Email</h3>
           <p className="text-lg hover:underline">
-            <a href="mailto:hanumantjain939@gmail.com">hanumantjain939@gmail.com</a>
+            <a href="mailto:hanumantjain939@gmail.com" style={{ color: primaryColor }}>hanumantjain939@gmail.com</a>
           </p>
         </div>
 
@@ -23,6 +26,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
+              style={{ color: primaryColor }}
             >
               GitHub
             </a>
@@ -31,6 +35,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
+              style={{ color: primaryColor }}
             >
               LinkedIn
             </a>
