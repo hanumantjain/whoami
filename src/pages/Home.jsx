@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className='min-h-screen flex flex-col md:flex-row md:items-center md:justify-between justify-evenly pl-10 md:pl-0'>
+      <div className='min-h-screen flex flex-col md:flex-row md:items-center md:justify-between justify-between pl-10 md:pl-0 py-64'>
         <div className='text-3xl md:text-6xl md:pl-20'>
           <h1 className='pb-3'>Hey, I'm Hanumant</h1>
           <span>{">"} </span>
