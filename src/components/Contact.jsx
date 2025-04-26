@@ -15,7 +15,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="border rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+        <div className="border rounded-2xl border-neutral-800 p-10 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
           <h3 className="text-3xl font-semibold mb-4">Connect with me</h3>
           <div className="flex flex-col items-center gap-4 text-lg">
             <a
