@@ -16,7 +16,7 @@ const Home = () => {
     <div>
       <Navbar />
       <div className='min-h-screen flex flex-col md:flex-row md:items-center md:justify-between justify-between pl-10 md:pl-0 py-64'>
-        <div className='text-3xl md:text-6xl md:pl-20'>
+        <div data-aos="fade-up" className='text-3xl md:text-6xl md:pl-20'>
           <h1 className='pb-3'>Hey, I'm Hanumant</h1>
           <span>{">"} </span>
           <span style={{ color: primaryColor }}>
@@ -32,7 +32,7 @@ const Home = () => {
           </span>
         </div>
 
-        <div className='w-80 md:w-2/5 mt-10 md:mt-0'>
+        <div data-aos="fade-up" className='w-80 md:w-2/5 mt-10 md:mt-0'>
           <Lottie 
             animationData={codingAnimation} 
             loop={true} 

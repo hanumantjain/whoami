@@ -22,7 +22,7 @@ const Experience = () => {
   return (
     <section id="hanumant jain experience" className="w-full max-w-5xl mx-auto py-20 px-4">
       <h2 className="text-5xl font-bold text-center mb-16">Experience</h2>
-      <div className="flex justify-center items-center">
+      <div data-aos="fade-up" className="flex justify-center items-center">
         {experiences.map((exp, index) => (
           <Card key={index} className="hover:shadow-xl transition-shadow max-w-xl p-10 duration-300">
             <CardHeader>
