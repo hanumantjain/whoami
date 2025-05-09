@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { RandomColorContext } from '../components/RandomColor'
 import Navbar from '../components/Navbar'
-import About from '@/components/About'
+import About2 from '@/components/About2'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Lottie from 'lottie-react'
@@ -39,7 +39,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <About />
+      <About2 />
       <Experience />
       <Projects />
       <Contact />

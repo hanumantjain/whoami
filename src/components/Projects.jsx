@@ -13,6 +13,10 @@ const Projects = () => {
         setShowAll(true)
     }
 
+    const handleHide = () => {
+      setShowAll(false)
+    }    
+
     const projectToShow = showAll ? projectData.slice().reverse() : projectData.slice().reverse().slice(0, 4)
     const primaryColor = useContext(RandomColorContext)
   return (
@@ -54,19 +58,26 @@ const Projects = () => {
           </Card>
         ))}
       </div>
-      {!showAll && projectData.length > 4 && (
-        <div className="flex justify-center mt-16">
-        <button
-          onClick={handleShowAll}
-          className="relative text-2xl group overflow-hidden"
-        >
-          Show All Projects
-          <span
-            className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"
-          ></span>
-        </button>
-      </div>
-      
+      {projectData.length > 4 && (
+        <div data-aos="fade-up"  className="flex justify-center mt-16">
+          {!showAll ? (
+            <button
+              onClick={handleShowAll}
+              className="relative text-2xl group overflow-hidden"
+            >
+              Show All Projects
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+            </button>
+          ) : (
+            <button
+              onClick={handleHide}
+              className="relative text-2xl group overflow-hidden"
+            >
+              Hide Projects
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+            </button>
+          )}
+        </div>
       )}
     </div>
   );

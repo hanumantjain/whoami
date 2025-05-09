@@ -5,6 +5,8 @@ import img3 from '../assets/hanumant-jain-decntrix.png'
 import img4 from '../assets/hanumant-jain-Web3Verse.png'
 import img5 from '../assets/hanumant-jain-tictactoe.png'
 import img6 from '../assets/hanumant-jain-wallcraftarchitect.png'
+import img7 from '../assets/hanumant_jain_greenShoes.png'
+import img8 from '../assets/hanumant_jain_medcompass.png'
 
 const projectData = [
     
@@ -52,7 +54,7 @@ const projectData = [
         alt: "hanumant jain portfolio",
         description : "Welcome to my portfolio – where my creativity meets innovation in every project I craft." ,
         tools : "ReatJS, TailwindCSS, ParticleJS",
-        website: "https://web3verse.netlify.app"
+        website: "https://hanumantjain.co"
     },
     {
         id: "5",
@@ -71,7 +73,25 @@ const projectData = [
         description : "This is an architect's portfolio" ,
         tools : "React, TailwindCSS",
         website: "https://wallcreaftarchitects.netlify.app"
-    }, 
+    },
+    {
+        id: "7",
+        name: "Green Shoes",
+        image: img7,
+        alt: "hanumant jain greenshoes",
+        description : "A responsive e-commerce shoe store with search, filters, cart, authentication, and smooth API-driven performance using Redux." ,
+        tools : "React.js, Node.js, TypeScript, Redux, PostgreSQL.",
+        website: "https://green-shoes.vercel.app"
+    },
+    {
+        id: "8",
+        name: "MedCompass",
+        image: img8,
+        alt: "hanumant jain medcompass",
+        description : "An automated post-discharge follow-up platform that streamlined patient recovery and reduced manual workload for healthcare staff through personalized, condition-based voice call engagement." ,
+        tools : "Twilio Voice API, MongoDB Atlas, React, REST APIs, Git",
+        website: "https://devpost.com/software/medcompass"
+    },
 ]
 
 export default projectData
