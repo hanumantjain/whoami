@@ -2,12 +2,13 @@ import React, { useContext } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { RandomColorContext } from '../components/RandomColor'
 import Navbar from '../components/Navbar'
-import About2 from '@/components/About2'
+import About2 from '@/components/About'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Lottie from 'lottie-react'
 import codingAnimation from '../assets/animation-hanumant-jain.json'
 import Contact from '@/components/Contact'
+import Skills from '@/components/Skills'
 
 const Home = () => {
   const primaryColor = useContext(RandomColorContext)
@@ -40,6 +41,7 @@ const Home = () => {
         </div>
       </div>
       <About2 />
+      <Skills />
       <Experience />
       <Projects />
       <Contact />
