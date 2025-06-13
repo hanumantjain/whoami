@@ -16,8 +16,8 @@ function App() {
   return (
     <div className='text-4xl'>
       <Routes>
-        <Route path='/' element={<Introduction />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route path='/' element={<Introduction />} /> */}
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   )
