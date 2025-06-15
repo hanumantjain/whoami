@@ -7,7 +7,7 @@ const experiences = [
     role: 'Student Project Assistant III',
     company: 'George Washington University',
     location: 'Washington, DC',
-    date: 'February 2025 - Present',
+    date: 'February 2025 - May 2025',
     tasks: [
       'Developing a responsive front-end for LaborLedger using React, HTML, CSS, and JavaScript, improving user accessibility by 30%.',
       'Integrated 10+ smart contract functions to enhance blockchain-based work agreements.',
