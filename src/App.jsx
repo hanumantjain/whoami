@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import Introduction from "./pages/Introduction"
 import Home from "./pages/Home"
+import ScrollToTop from "./components/ScrollToTop"
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -19,6 +20,7 @@ function App() {
         {/* <Route path='/' element={<Introduction />} /> */}
         <Route path="/" element={<Home />} />
       </Routes>
+      <ScrollToTop />
     </div>
   )
 }
