@@ -7,7 +7,7 @@ import img5 from '../assets/hanumant-jain-tictactoe.png'
 import img6 from '../assets/hanumant-jain-wallcraftarchitect.png'
 import img7 from '../assets/hanumant_jain_greenShoes.png'
 import img8 from '../assets/hanumant_jain_medcompass.png'
-
+import img9 from '../assets/hanumant-jain-KataBot.png'
 const projectData = [
     
     {
@@ -91,6 +91,15 @@ const projectData = [
         description : "An automated post-discharge follow-up platform that streamlined patient recovery and reduced manual workload for healthcare staff through personalized, condition-based voice call engagement." ,
         tools : "Twilio Voice API, MongoDB Atlas, React, REST APIs, Git",
         website: "https://devpost.com/software/medcompass"
+    },
+    {
+        id: "9",
+        name: "KatanBot",
+        image: img9,
+        alt: "hanumant jain katabot",
+        description : "Built an Agentic AI for the Katana DeFi network, enabling secure natural language interactions with blockchain assets through MPC-based key protection, real-time on-chain analysis, and integrated NFT insights via OpenSea and Dynamic authentication." ,
+        tools : "Katana DeFi, MCP, OpenAI API, OpenSea API, Dynamic Authentication, Python, React, TailwindCSS",
+        website: "https://katabot.netlify.app/"
     },
 ]
 

@@ -7,11 +7,12 @@ const experiences = [
     role: 'Student Project Assistant III',
     company: 'George Washington University',
     location: 'Washington, DC',
-    date: 'February 2025 - May 2025',
+    date: 'February 2025 - Present',
     tasks: [
-      'Developing a responsive front-end for LaborLedger using React, HTML, CSS, and JavaScript, improving user accessibility by 30%.',
-      'Integrated 10+ smart contract functions to enhance blockchain-based work agreements.',
-      'Collaborating with a team of 4+ researchers on documentation, testing, and compliance monitoring.',
+      'Architected deployment on AWS EC2, targeting 99.9% uptime and scalable domain management for 1,000+ projected daily users.',
+      'Containerized the application using Docker to ensure consistent environments across development and production, targeting a 40% faster deployment cycle.',
+      'Designed CI/CD pipelines with GitHub Actions to automate testing, building, and deployment workflows, with the goal of reducing release times by 50%.',
+      'Developed the application stack with React.js, Node.js, Express.js, Postgres, and Tailwind CSS to create a responsive, scalable UI capable of supporting 500+ concurrent users and improving load times by 20% based on early benchmarks.'
     ],
   },
 ];
